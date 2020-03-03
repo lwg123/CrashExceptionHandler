@@ -14,6 +14,8 @@
 		D170F2522407A12A00E1074C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D170F2512407A12A00E1074C /* Assets.xcassets */; };
 		D170F2552407A12A00E1074C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D170F2532407A12A00E1074C /* LaunchScreen.storyboard */; };
 		D170F2582407A12A00E1074C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D170F2572407A12A00E1074C /* main.m */; };
+		D170F2612407A18F00E1074C /* SignalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D170F2602407A18F00E1074C /* SignalHandler.m */; };
+		D170F2642407A1A800E1074C /* ExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D170F2632407A1A800E1074C /* ExceptionHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		D170F2542407A12A00E1074C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D170F2562407A12A00E1074C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D170F2572407A12A00E1074C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D170F25F2407A18F00E1074C /* SignalHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalHandler.h; sourceTree = "<group>"; };
+		D170F2602407A18F00E1074C /* SignalHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignalHandler.m; sourceTree = "<group>"; };
+		D170F2622407A1A800E1074C /* ExceptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionHandler.h; sourceTree = "<group>"; };
+		D170F2632407A1A800E1074C /* ExceptionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExceptionHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,8 @@
 		D170F2442407A12400E1074C /* CrashExceptionHandler */ = {
 			isa = PBXGroup;
 			children = (
+				D170F2652407A98E00E1074C /* CrashHandler02 */,
+				D170F25E2407A17A00E1074C /* CrashHandler */,
 				D170F2452407A12400E1074C /* AppDelegate.h */,
 				D170F2462407A12400E1074C /* AppDelegate.m */,
 				D170F2482407A12400E1074C /* SceneDelegate.h */,
@@ -74,6 +82,24 @@
 				D170F2572407A12A00E1074C /* main.m */,
 			);
 			path = CrashExceptionHandler;
+			sourceTree = "<group>";
+		};
+		D170F25E2407A17A00E1074C /* CrashHandler */ = {
+			isa = PBXGroup;
+			children = (
+				D170F25F2407A18F00E1074C /* SignalHandler.h */,
+				D170F2602407A18F00E1074C /* SignalHandler.m */,
+				D170F2622407A1A800E1074C /* ExceptionHandler.h */,
+				D170F2632407A1A800E1074C /* ExceptionHandler.m */,
+			);
+			path = CrashHandler;
+			sourceTree = "<group>";
+		};
+		D170F2652407A98E00E1074C /* CrashHandler02 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CrashHandler02;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +174,10 @@
 			files = (
 				D170F24D2407A12400E1074C /* ViewController.m in Sources */,
 				D170F2472407A12400E1074C /* AppDelegate.m in Sources */,
+				D170F2642407A1A800E1074C /* ExceptionHandler.m in Sources */,
 				D170F2582407A12A00E1074C /* main.m in Sources */,
 				D170F24A2407A12400E1074C /* SceneDelegate.m in Sources */,
+				D170F2612407A18F00E1074C /* SignalHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +324,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.duia.MDMiddleDelegateDemo.CrashExceptionHandler;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duia.CrashExceptionHandler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,7 +341,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.duia.MDMiddleDelegateDemo.CrashExceptionHandler;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duia.CrashExceptionHandler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
